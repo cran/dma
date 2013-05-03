@@ -67,13 +67,19 @@ Tyler H. McCormick, David Madigan, Adrian Raftery
 coef<-c(.08,-.4,-.1)
 coefmat<-cbind(rep(coef[1],200),rep(coef[2],200),rep(coef[3],200))
 #then, dynamic ones
-coefmat<-cbind(coefmat,seq(1,.45,length.out=nrow(coefmat)),seq(-.75,-.15,length.out=nrow(coefmat)),c(rep(-1.5,nrow(coefmat)/2),rep(-.5,nrow(coefmat)/2)))
+coefmat<-cbind(coefmat,seq(1,.45,length.out=nrow(coefmat)),
+          seq(-.75,-.15,length.out=nrow(coefmat)),
+          c(rep(-1.5,nrow(coefmat)/2),rep(-.5,nrow(coefmat)/2)))
 npar<-ncol(coefmat)-1
 
 #simulate data
 dat<-matrix(rnorm(200*(npar),0,1),200,(npar))
-ydat<-exp(rowSums((cbind(rep(1,nrow(dat)),dat))[1:100,]*coefmat[1:100,]))/(1+exp(rowSums(cbind(rep(1,nrow(dat)),dat)[1:100,]*coefmat[1:100,])))
-y<-c(ydat,exp(rowSums(cbind(rep(1,nrow(dat)),dat)[-c(1:100),c(1,5,6)]*coefmat[-c(1:100),c(1,5,6)]))/(1+exp(rowSums(cbind(rep(1,nrow(dat)),dat)[-c(1:100),c(1,5,6)]*coefmat[-c(1:100),c(1,5,6)]))))
+ydat<-exp(rowSums((cbind(rep(1,nrow(dat)),dat))[1:100,]*coefmat[1:100,]))/
+          (1+exp(rowSums(cbind(rep(1,nrow(dat)),dat)[1:100,]*coefmat[1:100,])))
+y<-c(ydat,exp(rowSums(cbind(rep(1,nrow(dat)),dat)[-c(1:100),c(1,5,6)]*
+               coefmat[-c(1:100),c(1,5,6)]))/
+          (1+exp(rowSums(cbind(rep(1,nrow(dat)),dat)[-c(1:100),c(1,5,6)]*
+               coefmat[-c(1:100),c(1,5,6)]))))
 u <- runif (length(y))
 y <- as.numeric (u < y)
 

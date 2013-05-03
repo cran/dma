@@ -1,5 +1,4 @@
-makf4 <-
-function( x, y, models.which, lambda=0.99, gamma=0.99, 
+makf4 <- function( x, y, models.which, lambda=0.99, gamma=0.99, 
  eps=.001/nrow(models.which), delay=1, initialperiod=200) {
 # Revised June 29, 2009 to replace equation (17) in the paper by a version
 # (Minor revision of comments August 10, 2011.)
@@ -54,7 +53,7 @@ nvar <- ncol(x)
 TT <- length(y)
 K <- nrow (models.which)
 model.dim <- rep(0,K)
-for (k in 1:K) model.dim[k] <- sum(as.real(models.which[k,]))+1
+for (k in 1:K) model.dim[k] <- sum(as.numeric(models.which[k,]))+1
 thetaold <- vector ("list",K)
 Sigmaold <- vector ("list",K)
 yhat <- matrix (rep(0,TT*K), ncol=K)
