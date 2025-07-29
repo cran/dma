@@ -1,5 +1,5 @@
-b66e519f682afcdca29b205a93970323 *ChangeLog
-d437632a8b5dbc01eebad90f184a70c3 *DESCRIPTION
+f991adef3eb6757ec2924f3e1bac1075 *ChangeLog
+85ede9c7d9eb8ac0ef5bc52a47aceb68 *DESCRIPTION
 d0848428342e817bef849575f6b00be1 *NAMESPACE
 410fbe908e8d6825b6dfaec91d6771b7 *R/dlogr.init.R
 c7d95e3dd37b0afb4eefe752ef97896f *R/dlogr.predict.R
@@ -17,8 +17,8 @@ a6aefa51b5982ed69a92e8076e63d200 *R/plot.logistic.dma.R
 5d25eff675419b9c05429667d709e6ca *R/print.logistic.dma.R
 542d3c112f902100923579d8985372e9 *R/rm.Kalman.R
 104edc946ac293cb06742e6b8d294354 *R/tunemat.fn.R
-4e886d9afcb821d20e4f3941a22f361f *man/dma-package.Rd
-190125b3170d4c61c35f6a2f1cfa4d0b *man/dma.Rd
-e7ee88a0b6d81cd13550c6b59956bad4 *man/logistic.dma.Rd
+6333ae5bdb9c19148f3f9df7e22323dd *man/dma-package.Rd
+12cf884e5f8afb8cf16fbd2e9adc5e64 *man/dma.Rd
+7420dfda3aed03b762c97e66a0a90a1e *man/logistic.dma.Rd
 abb8b189a64291242b09c4b38343c68a *tests/testthat.R
 c38067457d7dea463a7f7c5899d9083a *tests/testthat/test-logistic-dma.R
