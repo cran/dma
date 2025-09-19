@@ -1,5 +1,5 @@
 f991adef3eb6757ec2924f3e1bac1075 *ChangeLog
-85ede9c7d9eb8ac0ef5bc52a47aceb68 *DESCRIPTION
+9ec67a3215a1e4687d0261137c05cbd1 *DESCRIPTION
 d0848428342e817bef849575f6b00be1 *NAMESPACE
 410fbe908e8d6825b6dfaec91d6771b7 *R/dlogr.init.R
 c7d95e3dd37b0afb4eefe752ef97896f *R/dlogr.predict.R
@@ -21,4 +21,4 @@ a6aefa51b5982ed69a92e8076e63d200 *R/plot.logistic.dma.R
 12cf884e5f8afb8cf16fbd2e9adc5e64 *man/dma.Rd
 7420dfda3aed03b762c97e66a0a90a1e *man/logistic.dma.Rd
 abb8b189a64291242b09c4b38343c68a *tests/testthat.R
-c38067457d7dea463a7f7c5899d9083a *tests/testthat/test-logistic-dma.R
+61c3070ce44f3cc82e586ad57add70c0 *tests/testthat/test-logistic-dma.R
